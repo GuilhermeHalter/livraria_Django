@@ -23,7 +23,7 @@ class Autor(models.Model):
         verbose_name_plural = "Autores"
 
 class Livro(models.Model):
-    tirulo = models.CharField(max_length=255)
+    titulo = models.CharField(max_length=255)
     isbn = models.CharField(max_length=32, null=True, blank=True)
     quantidade = models.IntegerField(default=0)
     preco = models.DecimalField(max_digits=7, decimal_places=2, default=0)
